@@ -1,0 +1,237 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  min-height: 100vh;
+  background: #f3f4f6;
+  padding: 2rem;
+  color: #111827;
+}
+
+.app-header {
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.app-header p {
+  margin: 0.5rem 0 0;
+  color: #4b5563;
+}
+
+.job-list-section h2 {
+  margin-bottom: 1rem;
+}
+
+.job-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.job-card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.job-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.job-card-header h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.job-company {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.job-notes {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+/* Status badge styles */
+
+.status-badge {
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-applied {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status-interview {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.status-offer {
+  background-color: #fef9c3;
+  color: #854d0e;
+}
+
+.status-rejected {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.status-accepted {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.error-text {
+  color: #b91c1c;
+  margin-top: 0.5rem;
+}
+
+.layout {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 2fr);
+  }
+}
+
+.new-job-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+.job-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: #ffffff;
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.form-field span {
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.35);
+}
+
+.primary-button {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.primary-button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.job-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.secondary-button {
+  border: 1px solid #f87171;
+  background: #fef2f2;
+  color: #b91c1c;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background: #fee2e2;
+}
+
+.status-select {
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.75rem;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.filter-bar span {
+  font-weight: 500;
+  color: #374151;
+  margin-right: 0.25rem;
+}
+
+.filter-chip {
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  padding: 0.2rem 0.6rem;
+  background: #f9fafb;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #141414;
+}
+
+.filter-chip-active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
