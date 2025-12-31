@@ -1,5 +1,7 @@
 # Job Tracker Frontend
 
+![Job Tracker UI](./docs/job-tracker-ui.png)
+
 A simple frontend for the Job Tracker application, built with **React**, **TypeScript**, and **Vite**.
 
 It connects to the Job Tracker backend (Java + Spring Boot + PostgreSQL) and lets you:
